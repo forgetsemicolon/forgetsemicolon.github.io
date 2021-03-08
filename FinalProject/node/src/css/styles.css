@@ -1,0 +1,121 @@
+h1 {
+    color: black;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    /* margin-left: 50px; */
+    background-color: #5fb1e3;
+}
+
+.header {
+    text-align: center;
+}
+
+
+
+.step {
+    width: 20%;
+    height : 600px;
+    font-family: "TiemposTextWeb-Regular","Georgia";
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+    float: left;
+    margin-bottom: 60px;
+    margin-left: 25px;
+    margin-top: 150px;
+  }
+  
+  .title {
+    font-family: Arial,Helvetica,"san-serif";
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #262626;
+    line-height: 1.2em;
+    float:left;
+  }
+
+  .geo-img{
+      float: right;
+  }
+
+
+/* 1st viz */
+
+.container1 {
+    width: 100%;
+    height: 600px;
+    float: left;
+    /* position: relative; */
+    margin-bottom: 30px;
+    /* margin-left: 5px; */
+    margin-top: 50px;
+}
+
+
+#bubblechart {
+    fill: white;
+    /* stroke: white; */
+    text-decoration: black;
+    fill: black;
+    background-color: #5fb1e3;
+    stroke-width: 1.0px;
+    opacity: 1.0;
+    float: right;
+    margin-right: 20px;
+    color: black;
+}
+
+.bubbles {
+    stroke-width: 1px;
+    /* stroke: black; */
+    fill: white;
+    opacity: 0.6;
+  }
+
+.bubbles:hover {
+    stroke: #1c4a66;
+    /* color: #fb84ce; */
+    stroke-width: 3px;
+    fill: #1c4a66;
+    opacity: 0.8;
+  }
+
+#tooltip{
+    background-color: #e07b5f44;
+    font-family:Verdana; 
+    border-radius: 5%;
+    padding: 10px;
+}
+
+
+
+/* 2nd viz */
+
+.container4 {
+    width: 100%;
+    height: 600px;
+    float: left;
+    /* position: relative; */
+    margin-bottom: 60px;
+    /* margin-left: 5px; */
+    margin-top: 50px;
+}
+
+#streamgraph {
+    fill: white;
+    /* stroke: white; */
+    text-decoration: black;
+    fill: black;
+    /* background-color: rgb(37, 34, 34); */
+    stroke-width: 1.0px;
+    opacity: 1.0;
+    float: right;
+    margin-right: 20px;
+    color: black;
+    /* width: 700px; 
+    height: 500px;  */
+}
+
