@@ -17,7 +17,7 @@ header {
 #banner {
     width: 1100px;
     height: 250px;
-    border: 1.5px black solid;
+    border: 5px black solid;
     border-radius: 5px;
     margin: 0 auto;
     display: flex;
@@ -26,42 +26,39 @@ header {
 #banner_bottom {
     width: 1300px;
     height: 250px;
-    /* border: 1px black solid;
-    border-radius: 5px; */
-    /* background-color: #91CD91; */
-    background-image: url(images/DES157-Banner-021.png);
+    background-image: url(images/DES157-Banner-02.png);
     height: 250px;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
 }
 
 #name,
 #course {
     text-align: left;
-    font-weight: 400;
-    font-size: small;
+    font-weight: 600;
+    font-size: medium;
 }
 
 #u {
-    background-image: url(images/DES157-Banner_ArtboardU.png);
-    height: 250px;
+    background-image: url(images/Sticky-01.png);
+    height: 350px;
     background-position: center;
     background-size: cover;
 }
 
 #c {
-    background-image: url(images/DES157-Banner_ArtboardC.png);
-    height: 250px;
+    background-image: url(images/Sticky-02.png);
+    height: 350px;
     background-position: center;
     background-size: cover;
 }
 
 #d {
-    background-image: url(images/DES157-Banner_ArtboardD.png);
-    height: 250px;
+    background-image: url(images/Sticky-03.png);
+    height: 350px;
     background-position: center;
     background-size: cover;
 }
@@ -71,33 +68,33 @@ header {
 }
 
 #cow {
-    animation-name: animation1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation: animation1 36s ease-in-out infinite alternate;
+    /* animation-duration: 10s; */
+    /* animation-iteration-count: infinite; */
     width: auto;
     height: '100px';
 }
 
 @keyframes animation1 {
-    /* from {
+    from {
         left: 0;
         background-color: indigo;
     }
     to {
-        left: calc(100% - 30px);
+        left: calc(100% - 50px);
         background-color: lightcoral;
-    } */
-    0% {
+    }
+    /* 0% {
         left: 0px;
-        /* background-color: indigo; */
+        background-color: indigo;
     }
     50% {
         left: 500px;
     }
     100% {
         left: 1000px;
-        /* background-color: lightcoral; */
-    }
+        background-color: lightcoral;
+    } */
 }
 
 main {
@@ -110,11 +107,18 @@ main {
 
 main section {
     width: 33%;
-    height: 250px;
-    border: 1px solid lightblue;
-    margin: 0 1em;
-    padding: 1em;
-    font-size: small;
+    height: 550px;
+    color: white;
+    border-radius: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 5em;
+    font-size: medium;
+}
+
+main section:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 footer {
@@ -124,4 +128,14 @@ footer {
 
 footer a {
     text-align: center;
+    font-size: large;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: burlywood;
+    color: black;
 }
+
+footer a:hover, a:active {
+    background-color: #91D2E7;
+    color: white
+  }
