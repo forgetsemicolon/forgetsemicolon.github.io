@@ -29,7 +29,7 @@ header {
     /* border: 1px black solid;
     border-radius: 5px; */
     /* background-color: #91CD91; */
-    background-image: url(images/DES157-Banner-02.png);
+    background-image: url(images/DES157-Banner-021.png);
     height: 250px;
     background-position: center;
     background-size: cover;
@@ -43,6 +43,27 @@ header {
     text-align: left;
     font-weight: 400;
     font-size: small;
+}
+
+#u {
+    background-image: url(images/DES157-Banner_ArtboardU.png);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+#c {
+    background-image: url(images/DES157-Banner_ArtboardC.png);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+#d {
+    background-image: url(images/DES157-Banner_ArtboardD.png);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
 }
 
 #columns {
@@ -89,9 +110,11 @@ main {
 
 main section {
     width: 33%;
+    height: 250px;
     border: 1px solid lightblue;
     margin: 0 1em;
     padding: 1em;
+    font-size: small;
 }
 
 footer {
