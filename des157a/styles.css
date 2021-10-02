@@ -5,7 +5,9 @@
     justify-content: center;
     margin: 1em auto;
     padding-top: 2em;
-    border: 1px solid lightgray;
+    border: 1px solid white;
+    font-family: 'Roboto Slab', serif;
+    background-color: #FFEF78;
 }
 
 header {
@@ -15,7 +17,7 @@ header {
 #banner {
     width: 1100px;
     height: 250px;
-    border: 1px black solid;
+    border: 1.5px black solid;
     border-radius: 5px;
     margin: 0 auto;
     display: flex;
@@ -24,9 +26,15 @@ header {
 #banner_bottom {
     width: 1300px;
     height: 250px;
-    border: 1px black solid;
-    border-radius: 5px;
+    /* border: 1px black solid;
+    border-radius: 5px; */
+    /* background-color: #91CD91; */
+    background-image: url(images/DES157-Banner-02.png);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
     margin: 0 auto;
+    margin-bottom: 20px;
     display: flex;
 }
 
@@ -39,6 +47,36 @@ header {
 
 #columns {
     display: flex;
+}
+
+#cow {
+    animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: auto;
+    height: '100px';
+}
+
+@keyframes animation1 {
+    /* from {
+        left: 0;
+        background-color: indigo;
+    }
+    to {
+        left: calc(100% - 30px);
+        background-color: lightcoral;
+    } */
+    0% {
+        left: 0px;
+        /* background-color: indigo; */
+    }
+    50% {
+        left: 500px;
+    }
+    100% {
+        left: 1000px;
+        /* background-color: lightcoral; */
+    }
 }
 
 main {
