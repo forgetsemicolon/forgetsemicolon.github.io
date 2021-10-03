@@ -8,6 +8,16 @@
     border: 1px solid white;
     font-family: 'Roboto Slab', serif;
     background-color: #FFE459;
+    animation: animation0 5s ease-in-out infinite alternate;
+}
+
+@keyframes animation0 {
+    from {
+        background-color: #FFE459;
+    }
+    to {
+        background-color: #C2F784;
+    }
 }
 
 header {
