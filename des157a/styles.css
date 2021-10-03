@@ -7,7 +7,7 @@
     padding-top: 2em;
     border: 1px solid white;
     font-family: 'Roboto Slab', serif;
-    background-color: #FFEF78;
+    background-color: #FFE459;
 }
 
 header {
@@ -68,9 +68,10 @@ header {
 }
 
 #cow {
-    animation: animation1 36s ease-in-out infinite alternate;
+    animation: animation1 30s ease-in-out infinite;
     /* animation-duration: 10s; */
     /* animation-iteration-count: infinite; */
+    position: relative;
     width: auto;
     height: '100px';
 }
@@ -78,23 +79,10 @@ header {
 @keyframes animation1 {
     from {
         left: 0;
-        background-color: indigo;
     }
     to {
-        left: calc(100% - 50px);
-        background-color: lightcoral;
+        left: calc(100% - 280px);
     }
-    /* 0% {
-        left: 0px;
-        background-color: indigo;
-    }
-    50% {
-        left: 500px;
-    }
-    100% {
-        left: 1000px;
-        background-color: lightcoral;
-    } */
 }
 
 main {
