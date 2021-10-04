@@ -127,6 +127,21 @@ header :hover {
     background-size: cover;
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+a:hover {
+    letter-spacing: 3px;
+    color: black;
+}
+
 #columns {
     display: flex;
 }
