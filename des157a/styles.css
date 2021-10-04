@@ -22,6 +22,11 @@
 
 header {
     margin: 0 auto 2em auto;
+    transition: 5s;
+}
+
+header :hover {
+    letter-spacing: 5px;
 }
 
 #banner {
@@ -31,6 +36,9 @@ header {
     border-radius: 5px;
     margin: 0 auto;
     display: flex;
+    background-color: #91D2E7;
+    position: relative;
+    overflow: hidden;
 }
 
 #banner_bottom {
@@ -43,6 +51,45 @@ header {
     margin: 0 auto;
     margin-bottom: 30px;
     display: flex;
+}
+
+/* #cloud {
+    width: 100%;
+    height: auto;
+    position: absolute;
+} */
+
+#cloud1 {
+    transform: scale(0.5);
+    left: 20px;
+    top: 20px;
+    position: absolute;
+}
+#cloud2{
+    transform: scale(0.5);
+    left: 30px;
+    top: 40px;
+    position: absolute;
+}
+#cloud3 {
+    transform: scale(0.5);
+    left: 40px;
+    top: 30px;
+}
+#cloud4 {
+    transform: scale(0.5);
+    left: 50px;
+    top: 20px;
+}
+#cloud5 {
+    transform: scale(0.7);
+    left: 60px;
+    top: 300px;
+}
+#tower {
+    transform: scale(0.5);
+    left: 70px;
+    top: 20px;
 }
 
 #name,
