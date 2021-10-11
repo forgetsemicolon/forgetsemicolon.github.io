@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2!</h1>
+    <h2> You chose this color </h2>
+    
+    <script>
+        var color = prompt("Enter a color of your choice","")
+
+        var myColor = document.getElementsByTagName("h2")
+        myColor[0].style.backgroundColor = `${color}`;
+        console.log(color);
+    </script>
+</body>
+</html>
