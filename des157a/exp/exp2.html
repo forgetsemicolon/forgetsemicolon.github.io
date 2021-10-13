@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment 2</title>
+
+    <style>
+        .exp {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            padding: 20% 0 100px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Experiment 2!</h1>
-    <h2> You chose this color </h2>
+    <!-- <h1>Experiment 2!</h1> -->
+    <h2> You get to have some </h2>
     
     <script>
-        var color = prompt("Enter a color of your choice","")
+        var foods = ["cheese","cookie","candy","muffin","bread"];
+
+        var food = prompt("Enter aone of the following foods: Cheese,Cookie,Candy,Muffin,Bread","")
+
+        switch(food.toLowerCase()) {
+            case "cheese": color="#E0BBE4";
+                break;
+            case "cookie": color="#D0E5B9";
+                break;
+            case "candy": color="#F5C9CA";
+                break;
+            case "muffin": color="#FFC9B7";
+                break;
+            case "bread": color="#FCDDAF";
+                break;
+            default: color="#8ED4ED";
+        }
 
         var myColor = document.getElementsByTagName("body")
         myColor[0].style.backgroundColor = `${color}`;
         console.log(color);
+
+        var myFood = document.getElementsByTagName("h2");
+        console.log(myFood);
+        myFood[0].innerHTML += `${food}`;
+        myFood[0].className = "exp";
     </script>
 </body>
 </html>
