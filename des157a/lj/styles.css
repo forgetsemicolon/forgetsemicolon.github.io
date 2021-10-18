@@ -1,0 +1,39 @@
+body {
+    background-image: url('images/DES157-LJ.png');
+    background-size: cover;
+    color: black;
+    font-size: medium;
+    font-weight: 800;
+    font-family: 'Roboto Slab', serif;
+}
+
+section {
+    margin: 3em;
+    column-count: 3;
+    column-gap: 30px;
+    line-height: 2.0em;
+}
+
+section p:first-child {
+    margin-top: 0;
+}
+
+footer {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer a {
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: black;
+}
+
+footer a:hover, a:active {
+    background-color: #91D2E7;
+    color: white
+  }
