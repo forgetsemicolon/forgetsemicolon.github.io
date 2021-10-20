@@ -1,6 +1,7 @@
 body {
     background-image: url('images/DES157-LJ.png');
     background-size: cover;
+    background-attachment: fixed;
     color: black;
     font-size: medium;
     font-weight: 800;
