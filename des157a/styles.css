@@ -66,39 +66,6 @@ header :hover {
     position: absolute;
 }
 
-/* #cloud1 {
-    position: absolute;
-    transform: scale(0.5);
-    left: 0;
-    top: 0;
-}
-#cloud2{
-    transform: scale(0.5);
-    left: 30px;
-    top: 40px;
-    position: absolute;
-}
-#cloud3 {
-    transform: scale(0.5);
-    left: 0px;
-    top: 0px;
-}
-#cloud4 {
-    transform: scale(0.5);
-    left: 50px;
-    top: 20px;
-}
-#cloud5 {
-    transform: scale(0.7);
-    left: 60px;
-    top: 300px;
-}
-#tower {
-    transform: scale(0.5);
-    left: 70px;
-    top: 20px;
-} */
-
 #name,
 #course {
     text-align: left;

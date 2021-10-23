@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
-    <title>Build a Mad Lib Script</title>
+    <title>Mad Libs!</title>
 </head>
 <body>
+    <div class="page-container">
+        <header>
+            <h4 id="name"> <span style="background-color: #FFE699; font-weight: 500;"> N A M E :</span> Pratibha Agarwal</h1>
+            <h4 id="course"> <span style="background-color: #36C87A; font-weight: 500;"> C O U R S E :</span> "DES 157A - Interactive Media II - Fall 2021"</h2>
+        </header>
 
-    <header>
-        <h1>Build a Mad Lib Script</h1>
-    </header>
+        <main>
+            <form id="myForm">
+                <div class="grid-container">
+                    
+                    <div class="grid-item"><div class="ques"><label for="place">Where were you last night?</label></div><div class="ans"><input type="text" id="place" required></div></div>
+                    <div class="grid-item"><div class="ques"><label for="activity">What is your favorite activity?</label></div><div class="ans"><input type="text" id="activity" required></div></div>
+                    <div class="grid-item"><div class="ques"><label for="animal">What is your favorite animal?</label></div><div class="ans"><input type="text" id="animal" required></div></div>  
+                    <div class="grid-item"><div class="ques"><label for="city">What is your favorite city?</label></div><div class="ans"><input type="text" id="city" required></div></div> 
+                    <div class="circle"><div class="ques_cir"><label for="name">Name?</label></div><div class="ans_cir"><input type="text" id="name" required></div><div class="ans_cir"><input type="submit" value="Submit!"></div></div>
+                </div>
+            </form>
+            <article id="madlib"></article>
+        </main>
 
-    <main>
-        <form id="myForm">
-            <label for="noun1">Provide a Noun</label>
-            <input type="text" id="noun1" required>
+        <!-- <section id="overlay" class="hidden">
+            <article>
+                <h2>Overlay content here</h2>
+                <img src="./images/DES157-MadLibsComp-04.png" alt="thug cow">
+                <button class="close">close</button>
+            </article>
+        </section> -->
 
-            <label for="noun2">Provide another Noun</label>
-            <input type="text" id="noun2" required>
-
-            <label for="adj">Provide an Adjective</label>
-            <input type="text" id="adj">
-
-            <label for="verb">Provide a Verb</label>
-            <input type="text" id="verb">
-
-            <input type="submit" value="Send">
-        </form>
-        <article id="madlib"></article>
-    </main>
-
-    <footer>
-
-    </footer>
-    
+        <footer>
+            <a href="mailto:&#112;&#114;&#097;&#103;&#097;&#114;&#119;&#097;&#108;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">EMAIL</a>
+            <a href="https://validator.w3.org/check?uri=https://forgetsemicolon.github.io/des157a/madlibs">Valid HTML 5</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        </footer>
+    </div>
 </body>
 </html>

@@ -4,13 +4,18 @@
 
     const myForm = document.querySelector("#myForm");
     const madlib = document.querySelector("#madlib");
-    // let words = [];
 
     myForm.addEventListener("submit",function(event) {
         event.preventDefault();
         const formData = document.querySelectorAll("input[type=text]");
         processData(formData);
     });
+
+    function makeMadlib(wordsArray) {
+        var myText = `Here are the words: ${wordsArray[0]}, ${wordsArray[1]}, ${wordsArray[2]}, ${wordsArray[3]}, ${wordsArray[4]}`;
+        var myText = `I have your kid. ${wordsArray[4]} was kidnapped from the ${wordsArray[0]} yesterday night while ${wordsArray[1]} with their pet ${wordsArray[2]}. You will only get your child back if you sponsor my trip to ${wordsArray[3]}`;
+        madlib.innerHTML = myText;
+    }
 
     function processData(formData) {
         let emptyFields = 0;
@@ -30,60 +35,23 @@
         }
         else {
             makeMadlib(words);
+            console.log(words);
         }
     }
 
-
-
-
-
-    // myForm.addEventListener("submit",function(event) {
+    // document.querySelector('.open').addEventListener('click', function(event) {
     //     event.preventDefault();
-    //     const formData = document.querySelectorAll("input[type=text]");
-    //     let emptyFields = 0;
-
-    //     for (let eachWord of formData) {
-    //         if (eachWord.value) {
-    //             words.push(eachWord.value);
-    //             eachWord.value = "";
-    //         }
-    //         else{
-    //             emptyFields++;
-    //         }
-    //     }
-
-    //     makeMadlib(words);
+    //     document.getElementById('overlay').className = 'showing';
     // })
 
-    function makeMadlib(wordsArray) {
-        var myText = `Here are the words: ${wordsArray[0]}, ${wordsArray[1]}, ${wordsArray[2]}, ${wordsArray[3]}`;
-        madlib.innerHTML = myText;
-    }
-
-
-
-
-    // myForm.addEventListener('submit', function(event) {
-
+    // document.querySelector('.close').addEventListener('click', function(event) {
     //     event.preventDefault();
+    //     document.getElementById('overlay').className = 'hidden';
+    // })
 
-    //     const noun1 = document.querySelector("#noun1").value;
-    //     const noun2 = document.querySelector("#noun2").value;
-    //     const adj = document.querySelector("#adj").value;
-    //     const verb = document.querySelector("#verb").value;
-    //     const formData = document.querySelectorAll("input[type=text]");
-
-    //     if (noun1 && noun2 && adj && verb){
-    //         let myText = `Here are the words: ${noun1}, ${noun2}, ${adj}, ${verb}`;
-    //     }
-    //     else {
-    //         myText = "Please complete your form so that I can make your mad lib :)";
-    //     }
-
-    //     madlib.innerHTML = myText;
-
-    //     for(let eachField of formData) {
-    //         eachField.value = '';
+    // document.addEventListener('keydown', function(event) {
+    //     if (event.key === 'Escape') {
+    //         document.getElementById('overlay').className = 'hidden';
     //     }
     // })
 
