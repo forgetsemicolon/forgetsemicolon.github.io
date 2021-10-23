@@ -9,7 +9,19 @@
         event.preventDefault();
         const formData = document.querySelectorAll("input[type=text]");
         processData(formData);
+        document.getElementById('overlay').className = 'showing';
     });
+
+    document.querySelector('.close').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('overlay').className = 'hidden';
+    })
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            document.getElementById('overlay').className = 'hidden';
+        }
+    })
 
     function makeMadlib(wordsArray) {
         var myText = `Here are the words: ${wordsArray[0]}, ${wordsArray[1]}, ${wordsArray[2]}, ${wordsArray[3]}, ${wordsArray[4]}`;
