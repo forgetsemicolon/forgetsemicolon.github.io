@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1366px;
     min-width: 1366px;
+    margin: auto;
     justify-content: center;
     padding-top: 0.5em;
     font-family: 'Fredericka the Great', cursive;
@@ -40,13 +41,13 @@ h4 {
     grid-template-columns: auto auto;
     background-color: black;
     padding: 10px;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
 .grid-item {
     background-color: #FFE699;
-    background-image: url('./images/DES157-MadLibsComp(1)-02.png');
+    background-image: url('./images/DES157-MadLibsComp(3)-02.png');
     background-position: center;
     background-size: cover;
     border: 3px solid rgb(0, 0, 0);
@@ -64,8 +65,8 @@ h4 {
     background: #FFCCD2;
     border: 6px solid black;
     position: absolute;
-    top: 55%;
-    left: calc(1366px/2);
+    top: 50%;
+    left: calc(1440px/2);
     transform: translate(-50%, -50%); 
     font-size: 30px;
     text-align: center;
@@ -75,7 +76,7 @@ h4 {
 .ques {
     position: relative;
     top: 30%;
-    left: 40%;
+    left: 50%;
     width: 30%;
     line-height: 1.5em;
     height: 3em; 
@@ -87,7 +88,7 @@ h4 {
 .ans {
     position: relative;
     top: 40%;
-    left: 30px;
+    left: 15%;
 }
 
 .ques_cir {
@@ -183,7 +184,7 @@ input:hover {
 .close {
     position: relative;
     top: 62vh;
-    left: 10%;
+    left: 12%;
     font-family: 'Fredericka the Great', cursive;
     font-size: medium;
     background-color: rgba(0, 0, 0, 1);
