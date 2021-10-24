@@ -46,7 +46,7 @@ h4 {
 
 .grid-item {
     background-color: #FFE699;
-    background-image: url('./images/DES157-MadLibsComp-02.png');
+    background-image: url('./images/DES157-MadLibsComp(1)-02.png');
     background-position: center;
     background-size: cover;
     border: 3px solid rgb(0, 0, 0);
@@ -136,7 +136,7 @@ input:hover {
     margin: 0;
     background-color: #FFE699;
     transition: all 1s ease;
-    background-image: url('images/DES157-MadLibsComp-04.png');
+    background-image: url('images/DES157-Madlibs.gif');
     background-position: center;
     background-size: cover;
     overflow: hidden;
