@@ -39,7 +39,7 @@
         for (let eachLetter of wordsArray[4]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
-            img.src = getImgURL(`DES157-alpha-${eachLetter}.png`);
+            img.src = getImgURL(`DES157-alpha-${eachLetter.toLowerCase()}.png`);
             console.log(img.src);
             madlib.appendChild(img);
         };
@@ -51,7 +51,7 @@
         for (let eachLetter of wordsArray[0]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
-            img.src = getImgURL(`DES157-alpha-${eachLetter}.png`);
+            img.src = getImgURL(`DES157-alpha-${eachLetter.toLowerCase()}.png`);
             console.log(img.src);
             madlib.appendChild(img);
         };
@@ -63,7 +63,7 @@
         for (let eachLetter of wordsArray[1]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
-            img.src = getImgURL(`DES157-alpha-${eachLetter}.png`);
+            img.src = getImgURL(`DES157-alpha-${eachLetter.toLowerCase()}.png`);
             console.log(img.src);
             madlib.appendChild(img);
         };
@@ -75,7 +75,7 @@
         for (let eachLetter of wordsArray[2]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
-            img.src = getImgURL(`DES157-alpha-${eachLetter}.png`);
+            img.src = getImgURL(`DES157-alpha-${eachLetter.toLowerCase()}.png`);
             console.log(img.src);
             madlib.appendChild(img);
         };
@@ -87,7 +87,7 @@
         for (let eachLetter of wordsArray[3]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
-            img.src = getImgURL(`DES157-alpha-${eachLetter}.png`);
+            img.src = getImgURL(`DES157-alpha-${eachLetter.toLowerCase()}.png`);
             console.log(img.src);
             madlib.appendChild(img);
         };
