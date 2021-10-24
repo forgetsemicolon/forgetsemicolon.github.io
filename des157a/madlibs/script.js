@@ -5,30 +5,40 @@
     const myForm = document.querySelector("#myForm");
     const madlib = document.querySelector("#madlib");
 
+    //To display overlay on submit
     myForm.addEventListener("submit",function(event) {
         event.preventDefault();
         const formData = document.querySelectorAll("input[type=text]");
         processData(formData);
         document.getElementById('overlay').className = 'showing';
+
+        document.querySelector('body').style.overflow = "hidden";
     });
 
+    //To exit on pressing 'close' button
     document.querySelector('.close').addEventListener('click', function(event) {
         event.preventDefault();
         document.getElementById('overlay').className = 'hidden';
+
+        document.querySelector('body').style.overflow = "auto";
     })
 
+    //To exit to pressing ESC key
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
             document.getElementById('overlay').className = 'hidden';
+
+            document.querySelector('body').style.overflow = "auto";
         }
     })
 
+    //To fetch the respective alphabet's image from the folder
     function getImgURL(url) {
         return ("./images/" + url);
     }
 
+    //To create the ransom message 
     function makeMadlib(wordsArray) {
-        // const myText = `Here are the words: ${wordsArray[0]}, ${wordsArray[1]}, ${wordsArray[2]}, ${wordsArray[3]}, ${wordsArray[4]}`;
 
         var mybr = document.createElement('br');
 
@@ -40,6 +50,7 @@
 
         madlib.appendChild(mybr);
 
+        //To string the PNGs for alphabets in the input
         for (let eachLetter of wordsArray[4]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
@@ -54,6 +65,7 @@
 
         madlib.appendChild(mybr);
 
+        //To string the PNGs for alphabets in the input
         for (let eachLetter of wordsArray[0]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
@@ -68,6 +80,7 @@
 
         madlib.appendChild(mybr);
 
+        //To string the PNGs for alphabets in the input
         for (let eachLetter of wordsArray[1]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
@@ -82,6 +95,7 @@
 
         madlib.appendChild(mybr);
 
+        //To string the PNGs for alphabets in the input
         for (let eachLetter of wordsArray[2]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
@@ -98,6 +112,7 @@
 
         madlib.appendChild(mybr);
 
+        //To string the PNGs for alphabets in the input
         for (let eachLetter of wordsArray[3]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
@@ -112,6 +127,7 @@
 
     }
 
+    //To check if all fields are filled and then calling the madlibs() function
     function processData(formData) {
         let emptyFields = 0;
         let words = [];
@@ -133,21 +149,5 @@
             console.log(words);
         }
     }
-
-    // document.querySelector('.open').addEventListener('click', function(event) {
-    //     event.preventDefault();
-    //     document.getElementById('overlay').className = 'showing';
-    // })
-
-    // document.querySelector('.close').addEventListener('click', function(event) {
-    //     event.preventDefault();
-    //     document.getElementById('overlay').className = 'hidden';
-    // })
-
-    // document.addEventListener('keydown', function(event) {
-    //     if (event.key === 'Escape') {
-    //         document.getElementById('overlay').className = 'hidden';
-    //     }
-    // })
 
 }());
