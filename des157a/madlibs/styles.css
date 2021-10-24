@@ -4,7 +4,7 @@
     min-width: 1366px;
     justify-content: center;
     padding-top: 0.5em;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 *{
@@ -105,33 +105,38 @@ h4 {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    margin: 0;
     /* background-color: rgba(0,0,0,1); */
     background-color: #FFE699;
     transition: all 1s ease;
     background-image: url('images/DES157-MadLibsComp-04.png');
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 #overlay article {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 65%;
     box-sizing: border-box;
     padding: 20px;
     width: 20vw;
     height: 50vh;
     background-color: rgba(0,0,0,0);
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-    font-family: 'Fredericka the Great', cursive;
     transform: translate(-50%, -50%);
+}
+
+.submit {
+    font-family: 'Fredericka the Great', cursive;
 }
 
 .close {
     position: relative;
-    top: 50vh;
+    top: 65vh;
     left: 10%;
     font-family: 'Fredericka the Great', cursive;
 }
@@ -146,4 +151,25 @@ h4 {
     /* display: block; */
     visibility: visible;
     opacity: 1;
+}
+
+footer {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+footer a {
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: black;
+}
+
+footer a:hover, a:active {
+    background-color: #36C87A;
+    color: white
 }
