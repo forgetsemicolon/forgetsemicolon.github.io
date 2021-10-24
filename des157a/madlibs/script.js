@@ -32,7 +32,7 @@
 
         const myText = `I have your kid. ${wordsArray[4]} was kidnapped from the ${wordsArray[0]} yesterday night while ${wordsArray[1]} with their pet ${wordsArray[2]}. You will only get your child back if you sponsor my trip to ${wordsArray[3]}`;
 
-        const myText1 = "I have your kid.";
+        const myText1 = "I have your kid. ";
 
         madlib.innerHTML = myText1;
 
