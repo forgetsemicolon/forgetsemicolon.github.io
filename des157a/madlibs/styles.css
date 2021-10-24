@@ -74,12 +74,15 @@ h4 {
 }
 
 .ques {
-    display: flex;
     position: relative;
-    top: 35%;
-    left: 40px;
-    /* flex: 0 0 5em; */
-    flex: 1;
+    top: 30%;
+    left: 40%;
+    width: 30%;
+    line-height: 1.5em;
+    height: 3em; 
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 0.7em;
 }
 
 .ans {
@@ -151,7 +154,7 @@ input:focus {
     font-family: 'Fredericka the Great', cursive;
     font-size: medium;
     background-color: rgba(0, 0, 0, 1);
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 30px;
     color: white;
     padding: 10px 32px;
@@ -187,13 +190,11 @@ input:focus {
 }
 
 .hidden {
-    /* display: none; */
     visibility: hidden;
     opacity: 0;
 }
 
 .showing {
-    /* display: block; */
     visibility: visible;
     opacity: 1;
 }
