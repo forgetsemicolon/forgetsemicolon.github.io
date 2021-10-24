@@ -136,10 +136,10 @@ input:focus {
 #overlay article {
     position: absolute;
     top: 40%;
-    left: 65%;
+    left: 63%;
     box-sizing: border-box;
     padding: 20px;
-    width: 20vw;
+    width: 30vw;
     height: 50vh;
     background-color: rgba(0,0,0,0);
     font-size: 25px;

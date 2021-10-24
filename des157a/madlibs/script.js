@@ -30,11 +30,15 @@
     function makeMadlib(wordsArray) {
         // const myText = `Here are the words: ${wordsArray[0]}, ${wordsArray[1]}, ${wordsArray[2]}, ${wordsArray[3]}, ${wordsArray[4]}`;
 
+        var mybr = document.createElement('br');
+
         const myText = `I have your kid. ${wordsArray[4]} was kidnapped from the ${wordsArray[0]} yesterday night while ${wordsArray[1]} with their pet ${wordsArray[2]}. You will only get your child back if you sponsor my trip to ${wordsArray[3]}`;
 
         const myText1 = "I have your kid. ";
 
         madlib.innerHTML = myText1;
+
+        madlib.appendChild(mybr);
 
         for (let eachLetter of wordsArray[4]) {
             console.log("helloooo" + eachLetter);
@@ -48,6 +52,8 @@
 
         madlib.innerHTML += myText2;
 
+        madlib.appendChild(mybr);
+
         for (let eachLetter of wordsArray[0]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
@@ -59,6 +65,8 @@
         const myText3 = " yesterday night while "
 
         madlib.innerHTML += myText3;
+
+        madlib.appendChild(mybr);
 
         for (let eachLetter of wordsArray[1]) {
             console.log("helloooo" + eachLetter);
@@ -72,6 +80,8 @@
 
         madlib.innerHTML += myText4;
 
+        madlib.appendChild(mybr);
+
         for (let eachLetter of wordsArray[2]) {
             console.log("helloooo" + eachLetter);
             var img = document.createElement("img");
@@ -83,6 +93,8 @@
         const myText5 = ". You will only get your child back if you sponsor my trip to "
 
         madlib.innerHTML += myText5;
+
+        madlib.appendChild(mybr);
 
         for (let eachLetter of wordsArray[3]) {
             console.log("helloooo" + eachLetter);
