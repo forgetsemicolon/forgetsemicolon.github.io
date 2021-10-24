@@ -90,6 +90,8 @@
             madlib.appendChild(img);
         };
 
+        madlib.appendChild(mybr);
+
         const myText5 = ". You will only get your child back if you sponsor my trip to "
 
         madlib.innerHTML += myText5;

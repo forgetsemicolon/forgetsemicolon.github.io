@@ -14,7 +14,6 @@
 }
 
 header {
-    /* margin: 0 auto 0.5em auto; */
     padding-bottom: 2.0em;
 }
 
@@ -109,6 +108,7 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
     border: 4px solid black;
+    border-radius: 8px;
 }
 
 #uname {
@@ -117,8 +117,14 @@ input[type=text] {
 
 input:focus { 
     background-color: #FFE699;
-    border: 2px solid #36C87A;
-    border-radius: 4px;
+    border: 4px solid #36C87A;
+    border-radius: 8px;
+}
+
+input:hover {
+    background-color: #FFE699;
+    border: 4px solid #29975c;
+    border-radius: 8px;
 }
 
 #overlay {
@@ -166,6 +172,12 @@ input:focus {
 .submit:hover {
     background-color: #FFE699;
     color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .close {
