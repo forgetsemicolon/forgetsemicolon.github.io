@@ -77,7 +77,7 @@ h4 {
     border: 6px solid black;
     position: absolute;
     top: 50%;
-    left: calc(1366px/2);
+    left: calc(1440px/2);
     transform: translate(-50%, -50%); 
     font-size: 30px;
     text-align: center;
