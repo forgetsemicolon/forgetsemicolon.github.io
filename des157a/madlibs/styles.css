@@ -1,11 +1,22 @@
 .page-container {
+    position: relative;
     width: 100%;
     max-width: 1366px;
-    min-width: 1366px;
+    min-width: 500px;
     margin: auto;
     justify-content: center;
     padding-top: 0.5em;
     font-family: 'Fredericka the Great', cursive;
+    animation: animation0 5s ease-in-out infinite alternate;
+}
+
+@keyframes animation0 {
+    from {
+        background-color: #ffebee;
+    }
+    to {
+        background-color: #FFCCD2;
+    }
 }
 
 *{
