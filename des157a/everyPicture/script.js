@@ -13,6 +13,12 @@
     const strawberry = document.querySelector('#Straw_x5F_g');
     const blueberry = document.querySelector('#Blue_x5F_g');
     const banana = document.querySelector('#Banana_x5F_g');
+    const chips = document.querySelector('#Chips_x5F_g');
+    const pan = document.querySelector('#Saucepan_x5F_g');
+    const stove = document.querySelector('#Stove');
+    const final = document.querySelector('#Final');
+    const bowl = document.querySelector('#Bowl_x5F_g');
+    const counter = document.querySelector('#Counter');
 
     banana.style.opacity = 0;
     blueberry.style.opacity = 0;
@@ -20,6 +26,12 @@
     pb.style.opacity = 0;
     oats.style.opacity = 0;
     milk.style.opacity = 0;
+    chips.style.opacity = 0;
+    pan.style.opacity = 1;
+    stove.style.opacity = 1;
+    final.style.opacity = 0;
+    bowl.style.opacity = 0;
+    counter.style.opacity = 1;
 
     const inst = document.querySelector('#inst');
 
@@ -45,6 +57,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 1: banana.style.opacity = 0;
@@ -53,6 +71,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 1;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 2: banana.style.opacity = 0;
@@ -61,6 +85,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 1;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 3: banana.style.opacity = 0;
@@ -69,6 +99,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 1;
                     milk.style.opacity = 1;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 4: banana.style.opacity = 0;
@@ -77,6 +113,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 1;
                     milk.style.opacity = 1;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 5: banana.style.opacity = 0;
@@ -85,6 +127,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 1;
                     milk.style.opacity = 1;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
             case 6: banana.style.opacity = 1;
@@ -93,6 +141,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
             case 7: banana.style.opacity = 0;
@@ -101,6 +155,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
             case 8: banana.style.opacity = 0;
@@ -109,6 +169,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
             case 9: banana.style.opacity = 0;
@@ -117,23 +183,54 @@
                     pb.style.opacity = 1;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
-            //chocolate chip needed
-            case 10: banana.style.opacity = 0;
+            case 10:banana.style.opacity = 0;
                     blueberry.style.opacity = 0;
                     strawberry.style.opacity = 0;
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 1;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
+                    break;
+
+            case 10:banana.style.opacity = 0;
+                    blueberry.style.opacity = 0;
+                    strawberry.style.opacity = 0;
+                    pb.style.opacity = 0;
+                    oats.style.opacity = 0;
+                    milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 1;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 0;
                     break;
     
-            default: banana.style.opacity = 1;
-                    blueberry.style.opacity = 1;
-                    strawberry.style.opacity = 1;
-                    pb.style.opacity = 1;
-                    oats.style.opacity = 1;
-                    milk.style.opacity = 1;
+            default: banana.style.opacity = 0;
+                    blueberry.style.opacity = 0;
+                    strawberry.style.opacity = 0;
+                    pb.style.opacity = 0;
+                    oats.style.opacity = 0;
+                    milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 1;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 0;
                     break;
         }
     }
@@ -155,6 +252,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 1: banana.style.opacity = 0;
@@ -163,6 +266,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 1;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 2: banana.style.opacity = 0;
@@ -171,6 +280,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 1;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 3: banana.style.opacity = 0;
@@ -179,6 +294,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 1;
                     milk.style.opacity = 1;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 4: banana.style.opacity = 0;
@@ -187,6 +308,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 1;
                     milk.style.opacity = 1;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 1;
+                    stove.style.opacity = 1;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 1;
                     break;
     
             case 5: banana.style.opacity = 0;
@@ -195,6 +322,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 1;
                     milk.style.opacity = 1;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
             case 6: banana.style.opacity = 1;
@@ -203,6 +336,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
             case 7: banana.style.opacity = 0;
@@ -211,6 +350,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
             case 8: banana.style.opacity = 0;
@@ -219,6 +364,12 @@
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
             case 9: banana.style.opacity = 0;
@@ -227,23 +378,54 @@
                     pb.style.opacity = 1;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
                     break;
     
-            //chocolate chip needed
-            case 10: banana.style.opacity = 0;
+            case 10:banana.style.opacity = 0;
                     blueberry.style.opacity = 0;
                     strawberry.style.opacity = 0;
                     pb.style.opacity = 0;
                     oats.style.opacity = 0;
                     milk.style.opacity = 0;
+                    chips.style.opacity = 1;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 0;
+                    bowl.style.opacity = 1;
+                    counter.style.opacity = 1;
+                    break;
+
+            case 10:banana.style.opacity = 0;
+                    blueberry.style.opacity = 0;
+                    strawberry.style.opacity = 0;
+                    pb.style.opacity = 0;
+                    oats.style.opacity = 0;
+                    milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 1;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 0;
                     break;
     
-            default: banana.style.opacity = 1;
-                    blueberry.style.opacity = 1;
-                    strawberry.style.opacity = 1;
-                    pb.style.opacity = 1;
-                    oats.style.opacity = 1;
-                    milk.style.opacity = 1;
+            default: banana.style.opacity = 0;
+                    blueberry.style.opacity = 0;
+                    strawberry.style.opacity = 0;
+                    pb.style.opacity = 0;
+                    oats.style.opacity = 0;
+                    milk.style.opacity = 0;
+                    chips.style.opacity = 0;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
+                    final.style.opacity = 1;
+                    bowl.style.opacity = 0;
+                    counter.style.opacity = 0;
                     break;
         }
     }
