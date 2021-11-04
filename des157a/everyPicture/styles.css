@@ -38,10 +38,6 @@ h4 {
 g {
     opacity: 1;
 }
-/* 
-#Milk_x5F_g {
-    opacity: 0;
-} */
 
 .selected {
     opacity: 1;
@@ -60,13 +56,13 @@ g {
 #prev {
     position: absolute;
     left: 10%;
-    top: 25%;
+    top: 28%;
 }
 
 #next {
     position: absolute;
     left: 15%;
-    top: 25%;
+    top: 28%;
 }
 
 #inst {
@@ -75,9 +71,12 @@ g {
     top: 15%;
     background-color: #FACE7F;
     width: 20%;
-    height: 7%;
+    height: 8%;
     border-radius: 10px;
-    padding: 0.5em;
+    padding: 0.9em;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
 }
 
 footer {
