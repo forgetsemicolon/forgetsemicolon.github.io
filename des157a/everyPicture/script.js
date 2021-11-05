@@ -2,7 +2,7 @@
     'use strict';
     console.log('reading js');
 
-    const instructions = ["Let's start!", "Add 1-1/2 cups of milk in a saucepan", "Add 1/2 cup of rolled oats to it", "Let the oats cook in the milk for 5 minutes on medium heat", "Keep stirring", "Once the oats are cooked, take them off the heat and pour in a bowl", "Start by chopping a banana and adding it to the bowl", "Finely chop around 4-5 strawberries and add them to the bowl as well", "Add a handful of blueberries to the bowl", "Once all the toppings are added, spread a spoonful of your favorite peanut butter or any other nut butter.", "Lastly, top it off with as many cocoa nibs as you like!", "Enjoy! :)"];
+    const instructions = ["Let's start!", "Add 1-1/2 cups of milk in a saucepan", "Add 1/2 cup of rolled oats to it", "Let the oats cook in the milk for 5 minutes on medium heat", "Keep stirring", "Once the oats are cooked, take them off the heat and pour in a bowl", "Start by chopping a banana and adding it to the bowl", "Finely chop around 4-5 strawberries and add them to the bowl as well", "Add a handful of blueberries to the bowl", "Once all the toppings are added, spread a spoonful of your favorite peanut butter or any other nut butter.", "Lastly, top it off with as many cacao nibs as you like!", "Enjoy! :)"];
     
     const next = document.querySelector('#next');
     const prev = document.querySelector('#prev');
