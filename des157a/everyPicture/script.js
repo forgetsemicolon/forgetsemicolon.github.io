@@ -6,6 +6,7 @@
     
     const next = document.querySelector('#next');
     const prev = document.querySelector('#prev');
+    const gallery = document.querySelector('#gallery');
 
     const milk = document.querySelector('#Milk_x5F_g');
     const oats = document.querySelector('#Oats_x5F_g');
@@ -234,6 +235,11 @@
                     break;
         }
     }
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowRight') {
+            nextInstruction();
+        }
+    })
 
     prev.addEventListener('click', prevInstruction);
 
@@ -429,5 +435,36 @@
                     break;
         }
     }
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {
+            prevInstruction();
+        }
+    })
+
+    //To display overlay on submit
+    gallery.addEventListener("click",function(event) {
+        event.preventDefault();
+        
+        document.getElementById('overlay').className = 'showing';
+
+        document.querySelector('body').style.overflow = "hidden";
+    });
+
+    //To exit on pressing 'close' button
+    document.querySelector('.close').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('overlay').className = 'hidden';
+
+        document.querySelector('body').style.overflow = "auto";
+    })
+
+    //To exit to pressing ESC key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            document.getElementById('overlay').className = 'hidden';
+
+            document.querySelector('body').style.overflow = "auto";
+        }
+    })
 
 }());
