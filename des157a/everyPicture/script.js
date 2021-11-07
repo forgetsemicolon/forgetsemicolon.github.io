@@ -7,6 +7,9 @@
     const next = document.querySelector('#next');
     const prev = document.querySelector('#prev');
     const gallery = document.querySelector('#gallery');
+    const dark = document.querySelector('#dark');
+    const light = document.querySelector('#light');
+    const body = document.querySelector('body');
 
     const milk = document.querySelector('#Milk_x5F_g');
     const oats = document.querySelector('#Oats_x5F_g');
@@ -465,6 +468,15 @@
 
             document.querySelector('body').style.overflow = "auto";
         }
+    })
+
+    dark.addEventListener("click", function() {
+            body.style.background = '#FFF';
+            body.style.filter = 'invert(1) hue-rotate(210deg)';
+    })
+    light.addEventListener("click", function() {
+	body.style.background = '#FFF';
+	body.style.filter = 'none'
     })
 
 }());

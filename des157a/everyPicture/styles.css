@@ -99,6 +99,26 @@ g {
     cursor: pointer;
 }
 
+#dark {
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+#light {
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
 #gallery {
     position: absolute;
     right: 10%;
@@ -167,7 +187,12 @@ g {
 img {
     position: relative;
     top: 10%;
+    transition: 0.3s;
 }
+
+img:hover {
+    transform: scale(1.1);
+  }
 
 .close {
     position: relative;
