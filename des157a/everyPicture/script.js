@@ -36,6 +36,8 @@
     final.style.opacity = 0;
     bowl.style.opacity = 0;
     counter.style.opacity = 1;
+    prev.style.opacity = 0;
+    next.style.opacity = 1;
 
     const inst = document.querySelector('#inst');
 
