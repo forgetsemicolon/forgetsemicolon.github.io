@@ -512,13 +512,13 @@
     })
 
     //To enable dark mode
-    dark.addEventListener("click", function() {
-            body.style.background = '#FFF';
-            body.style.filter = 'invert(1) hue-rotate(210deg)';
-    })
-    light.addEventListener("click", function() {
-	body.style.background = '#FFF';
-	body.style.filter = 'none'
-    })
+    // dark.addEventListener("click", function() {
+    //         body.style.background = '#FFF';
+    //         body.style.filter = 'invert(1) hue-rotate(210deg)';
+    // })
+    // light.addEventListener("click", function() {
+	// body.style.background = '#FFF';
+	// body.style.filter = 'none'
+    // })
 
 }());

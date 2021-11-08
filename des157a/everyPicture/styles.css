@@ -262,9 +262,8 @@ footer {
 }
 
 footer a {
-    font-size: 5px;
+    font-size: small;
     text-align: center;
-    font-size: large;
     letter-spacing: 2px;
     color: grey;
 }
