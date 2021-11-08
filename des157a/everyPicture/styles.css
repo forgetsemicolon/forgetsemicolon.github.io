@@ -266,6 +266,7 @@ footer a {
     text-align: center;
     letter-spacing: 2px;
     color: grey;
+    opacity: 0.5;
 }
 
 footer a:hover, a:active {
