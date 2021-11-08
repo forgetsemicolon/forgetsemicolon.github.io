@@ -57,27 +57,32 @@
 
     next.addEventListener('click', nextInstruction);
 
+    //for next button
     function nextInstruction() {
+
         currentInst++;
 
         if (currentInst > instructions.length-1) {
             currentInst = 0;
         }
+
         inst.innerHTML = instructions[currentInst];
 
         switch(currentInst) {
-            case 0: banana.style.opacity = 0;
-                    blueberry.style.opacity = 0;
-                    strawberry.style.opacity = 0;
-                    pb.style.opacity = 0;
-                    oats.style.opacity = 0;
-                    milk.style.opacity = 0;
-                    chips.style.opacity = 0;
-                    pan.style.opacity = 1;
-                    stove.style.opacity = 1;
+            case 0: banana.style.opacity = 1;
+                    blueberry.style.opacity = 1;
+                    strawberry.style.opacity = 1;
+                    pb.style.opacity = 1;
+                    oats.style.opacity = 1;
+                    milk.style.opacity = 1;
+                    chips.style.opacity = 1;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 0;
+                    next.style.opacity = 1;
                     break;
     
             case 1: banana.style.opacity = 0;
@@ -92,6 +97,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 2: banana.style.opacity = 0;
@@ -106,6 +113,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 3: banana.style.opacity = 0;
@@ -120,6 +129,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 4: banana.style.opacity = 0;
@@ -134,6 +145,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 5: banana.style.opacity = 1;
@@ -148,6 +161,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 6: banana.style.opacity = 0;
@@ -162,6 +177,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 7: banana.style.opacity = 0;
@@ -176,6 +193,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 8: banana.style.opacity = 0;
@@ -190,6 +209,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 9: banana.style.opacity = 0;
@@ -204,6 +225,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
 
             case 10:banana.style.opacity = 0;
@@ -218,6 +241,8 @@
                     final.style.opacity = 1;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 0;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 0;
                     break;
     
             default: banana.style.opacity = 0;
@@ -232,18 +257,25 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 0;
+                    prev.style.opacity = 0;
+                    next.style.opacity = 0;
                     break;
         }
     }
+
+    //to enable 'next' on ArrowRight key
     document.addEventListener('keydown', function(event) {
         if (event.key === 'ArrowRight') {
             nextInstruction();
         }
     })
 
-	prev.addEventListener('click', prevInstruction);
+    
+    prev.addEventListener('click', prevInstruction);
 
+    //for prev button
     function prevInstruction() {
+
         currentInst--;
 
         if (currentInst < 0) {
@@ -252,18 +284,20 @@
         inst.innerHTML = instructions[currentInst];
 
         switch(currentInst) {
-            case 0: banana.style.opacity = 0;
-                    blueberry.style.opacity = 0;
-                    strawberry.style.opacity = 0;
-                    pb.style.opacity = 0;
-                    oats.style.opacity = 0;
-                    milk.style.opacity = 0;
-                    chips.style.opacity = 0;
-                    pan.style.opacity = 1;
-                    stove.style.opacity = 1;
+            case 0: banana.style.opacity = 1;
+                    blueberry.style.opacity = 1;
+                    strawberry.style.opacity = 1;
+                    pb.style.opacity = 1;
+                    oats.style.opacity = 1;
+                    milk.style.opacity = 1;
+                    chips.style.opacity = 1;
+                    pan.style.opacity = 0;
+                    stove.style.opacity = 0;
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 0;
+                    next.style.opacity = 1;
                     break;
     
             case 1: banana.style.opacity = 0;
@@ -278,6 +312,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 2: banana.style.opacity = 0;
@@ -292,6 +328,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 3: banana.style.opacity = 0;
@@ -306,6 +344,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 4: banana.style.opacity = 0;
@@ -320,6 +360,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 5: banana.style.opacity = 1;
@@ -334,6 +376,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 6: banana.style.opacity = 0;
@@ -348,6 +392,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 7: banana.style.opacity = 0;
@@ -362,6 +408,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 8: banana.style.opacity = 0;
@@ -376,6 +424,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
     
             case 9: banana.style.opacity = 0;
@@ -390,6 +440,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 1;
                     break;
 
             case 10:banana.style.opacity = 0;
@@ -404,6 +456,8 @@
                     final.style.opacity = 1;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 0;
+                    prev.style.opacity = 1;
+                    next.style.opacity = 0;
                     break;
     
             default: banana.style.opacity = 0;
@@ -415,12 +469,16 @@
                     chips.style.opacity = 0;
                     pan.style.opacity = 0;
                     stove.style.opacity = 0;
-                    final.style.opacity = 1;
+                    final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 0;
+                    prev.style.opacity = 0;
+                    next.style.opacity = 0;
                     break;
         }
     }
+
+    //to enable 'prev' on ArrowLeft
     document.addEventListener('keydown', function(event) {
         if (event.key === 'ArrowLeft') {
             prevInstruction();
@@ -453,6 +511,7 @@
         }
     })
 
+    //To enable dark mode
     dark.addEventListener("click", function() {
             body.style.background = '#FFF';
             body.style.filter = 'invert(1) hue-rotate(210deg)';
