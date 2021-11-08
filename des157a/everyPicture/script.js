@@ -46,17 +46,6 @@
 
     console.log(currentInst);
 
-    // if (currentInst == 0) {
-    //     prev.style.opacity = 0;
-    // }
-    // else {
-    //     prev.style.opacity = 1;
-    // }
-
-    // if (currentInst == instructions.length-1) {
-    //     next.style.opacity = 0;
-    // }
-
     next.addEventListener('click', nextInstruction);
 
     //for next button
