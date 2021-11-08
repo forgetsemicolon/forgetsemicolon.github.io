@@ -197,7 +197,12 @@ img {
 
 img:hover {
     transform: scale(1.1);
-  }
+}
+
+figcaption {
+    font-size: small;
+    color: white;
+}
 
 .close {
     position: relative;
@@ -210,7 +215,7 @@ img:hover {
     color: black;
     padding: 10px 32px;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 20px 2px;
     cursor: pointer;
 }
 
