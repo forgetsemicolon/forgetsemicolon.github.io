@@ -36,8 +36,8 @@
     final.style.opacity = 0;
     bowl.style.opacity = 0;
     counter.style.opacity = 1;
-    prev.style.opacity = 0;
-    next.style.opacity = 1;
+    prev.style.display = 'none';
+    // next.style.opacity = 1;
 
     const inst = document.querySelector('#inst');
 
@@ -83,8 +83,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 0;
-                    next.style.opacity = 1;
+                    prev.style.display = 'none';
                     break;
     
             case 1: banana.style.opacity = 0;
@@ -99,8 +98,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
     
             case 2: banana.style.opacity = 0;
@@ -115,8 +113,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
     
             case 3: banana.style.opacity = 0;
@@ -131,8 +128,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
     
             case 4: banana.style.opacity = 0;
@@ -147,8 +143,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
     
             case 5: banana.style.opacity = 1;
@@ -163,8 +158,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
     
             case 6: banana.style.opacity = 0;
@@ -179,8 +173,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
     
             case 7: banana.style.opacity = 0;
@@ -195,8 +188,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
     
             case 8: banana.style.opacity = 0;
@@ -211,8 +203,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
     
             case 9: banana.style.opacity = 0;
@@ -227,8 +218,7 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
                     break;
 
             case 10:banana.style.opacity = 0;
@@ -243,8 +233,8 @@
                     final.style.opacity = 1;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 0;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 0;
+                    prev.style.display = 'block';
+                    next.style.display = 'none';
                     break;
     
             default: banana.style.opacity = 0;
@@ -259,8 +249,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 0;
-                    prev.style.opacity = 0;
-                    next.style.opacity = 0;
+                    prev.style.display = 'none';
+                    next.style.display = 'none';
                     break;
         }
     }
@@ -298,8 +288,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 0;
-                    next.style.opacity = 1;
+                    prev.style.display = 'none';
+                    next.style.display = 'block';
                     break;
     
             case 1: banana.style.opacity = 0;
@@ -314,8 +304,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
     
             case 2: banana.style.opacity = 0;
@@ -330,8 +320,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
     
             case 3: banana.style.opacity = 0;
@@ -346,8 +336,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
     
             case 4: banana.style.opacity = 0;
@@ -362,8 +352,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
     
             case 5: banana.style.opacity = 1;
@@ -378,8 +368,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
     
             case 6: banana.style.opacity = 0;
@@ -394,8 +384,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
     
             case 7: banana.style.opacity = 0;
@@ -410,8 +400,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
     
             case 8: banana.style.opacity = 0;
@@ -426,8 +416,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
     
             case 9: banana.style.opacity = 0;
@@ -442,8 +432,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 1;
                     counter.style.opacity = 1;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 1;
+                    prev.style.display = 'block';
+                    next.style.display = 'block';
                     break;
 
             case 10:banana.style.opacity = 0;
@@ -458,8 +448,8 @@
                     final.style.opacity = 1;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 0;
-                    prev.style.opacity = 1;
-                    next.style.opacity = 0;
+                    prev.style.display = 'block';
+                    next.style.display = 'none';
                     break;
     
             default: banana.style.opacity = 0;
@@ -474,8 +464,8 @@
                     final.style.opacity = 0;
                     bowl.style.opacity = 0;
                     counter.style.opacity = 0;
-                    prev.style.opacity = 0;
-                    next.style.opacity = 0;
+                    prev.style.display = 'none';
+                    next.style.display = 'none';
                     break;
         }
     }
