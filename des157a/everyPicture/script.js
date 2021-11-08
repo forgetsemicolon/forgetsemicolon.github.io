@@ -24,15 +24,15 @@
     const bowl = document.querySelector('#Bowl_x5F_g');
     const counter = document.querySelector('#Counter');
 
-    banana.style.opacity = 0;
-    blueberry.style.opacity = 0;
-    strawberry.style.opacity = 0;
-    pb.style.opacity = 0;
-    oats.style.opacity = 0;
-    milk.style.opacity = 0;
-    chips.style.opacity = 0;
-    pan.style.opacity = 1;
-    stove.style.opacity = 1;
+    banana.style.opacity = 1;
+    blueberry.style.opacity = 1;
+    strawberry.style.opacity = 1;
+    pb.style.opacity = 1;
+    oats.style.opacity = 1;
+    milk.style.opacity = 1;
+    chips.style.opacity = 1;
+    pan.style.opacity = 0;
+    stove.style.opacity = 0;
     final.style.opacity = 0;
     bowl.style.opacity = 0;
     counter.style.opacity = 1;
