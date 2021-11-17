@@ -1,0 +1,91 @@
+.game-container {
+    width: 100%;
+    max-width: 1366px;
+    min-width: 1200px;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    /* color: #333; */
+    padding: 35px;
+    line-height: 1.5em;
+    background-color: #47BAE3;
+    background-image: url('images/DES157-GameDesign_bg-05.jpg');
+    background-size: cover;
+}
+
+#heading {
+    font-size: 52px;
+    color: #FFCF45;
+    text-align: center;
+    text-shadow: 5px 3px black;
+}
+
+.blink_me {
+    animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+50% {
+        opacity: 0;
+    }
+}
+
+button { 
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    /* background-color: rgba(0,0,0,0.2); /* Green 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; */
+}
+
+div {
+    padding: 10px;
+}
+
+#gamecontrol, #score {
+    /* background-color: aliceblue; */
+    text-align: center;
+    color: #ffff;
+    font-size: 10px;
+}
+
+#game {
+    /* background-color:#eaeaea; */
+    text-align: center;
+    font-size: 12px;
+}
+#actions, #score {
+    /* background-color: silver; */
+    text-align: center;
+    font-size: 12px;
+}
+
+footer {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    font-size: small;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    opacity: 1;
+}
+
+footer a:hover, a:active {
+    color: yellow
+}
