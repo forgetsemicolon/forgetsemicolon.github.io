@@ -111,13 +111,14 @@ body {
 
 button { 
     padding: 10px;
-    font-size: 15px;
+    font-size: 25px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'VT323', monospace;
 }
 
 div {
-    padding: 10px;
+    padding: 7px;
 }
 
 #gamecontrol, #score {
