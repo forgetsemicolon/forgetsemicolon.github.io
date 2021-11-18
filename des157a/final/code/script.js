@@ -12,7 +12,6 @@
     const winningSound = new Audio('media/finalWin.mp3');
     const snakeEyes = new Audio('media/snakeEyes-2.mp3');
 
-    // const info = document.getElementById('info');
     const inst = document.getElementById('inst');
 
     const squid1 = document.getElementById('squid_l');
