@@ -98,6 +98,7 @@
     }
 
     function throwDice() {
+        diceRoll.play();
         actionArea.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
@@ -105,7 +106,6 @@
         game.innerHTML += `<img id="dice1" src="images/${gameData.dice[gameData.roll1-1]}">
                             <img id="dice2" src="images/${gameData.dice[gameData.roll2-1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
-        diceRoll.play();
 
         //if two 1s are rolled
         if (gameData.rollSum === 2) {
