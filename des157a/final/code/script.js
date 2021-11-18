@@ -191,7 +191,7 @@
                 squid1.style.transition = '2s';
                 // squid1.style.transform = "rotate(-45deg)";
                 squid1.style.transition = '2s';
-                squid1.style.transform = "rotate(360deg)";
+                squid1.style.transform = 'rotate(360deg)';
                 squid2.style.display = 'none';
             }
             else {
@@ -200,7 +200,7 @@
                 squid2.style.transition = '2s';
                 // squid2.style.transform = "rotate(-45deg)";
                 squid2.style.transition = '2s';
-                squid2.style.transform = "rotate(360deg)";
+                squid2.style.transform = 'rotate(360deg)';
                 squid1.style.display = 'none';
             }
 
