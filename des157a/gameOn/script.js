@@ -8,6 +8,9 @@
     const score = document.getElementById('score');
     const actionArea = document.getElementById('actions');
 
+    const diceRoll = new Audio('media/diceRoll.mp3');
+    const winningSound = new Audio('media/winningSound.mp3');
+
     // const info = document.getElementById('info');
     const inst = document.getElementById('inst');
 
@@ -93,6 +96,7 @@
         game.innerHTML += `<img src="images/${gameData.dice[gameData.roll1-1]}">
                             <img src="images/${gameData.dice[gameData.roll2-1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
+        diceRoll.play();
 
         //if two 1s are rolled
         if (gameData.rollSum === 2) {
@@ -138,6 +142,8 @@
     function checkWinningCondition () {
         if (gameData.score[gameData.index] > gameData.gameEnd) {
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+
+            winningSound.play();
 
             actionArea.innerHTML = '';
             const images = document.querySelectorAll('img');
