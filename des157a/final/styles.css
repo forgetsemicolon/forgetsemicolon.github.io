@@ -1,9 +1,9 @@
-.game-container {
+#game-container {
     width: 100%;
     max-width: 1366px;
     /* min-width: 1200px; */
     justify-content: center;
-    display: flex;
+    /* display: flex; */
 }
 
 body {
@@ -25,12 +25,56 @@ body {
     width: 40%;
     background-color: #C95828;
     border: 5px solid black;
-    flex: 1;
+    /* flex: 1; */
+    /* float: left; */
 }
 
-figcaption {
-    text-align: center;
+#summary {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
 }
+
+#comp1 {
+    position: absolute;
+    top: 10vh;
+    left: 55vw;
+}
+
+#comp2 {
+    position: absolute;
+    top: 40vh;
+    left: 5vw;
+}
+
+#goals {
+    position: absolute;
+    top: 110vh;
+    left: 55vw;
+}
+
+#des_strategies {
+    position: absolute;
+    top: 140vh;
+    left: 70px;
+}
+
+#int_strategies {
+    position: absolute;
+    top: 160vh;
+    left: 55vw;
+}
+
+#exp_goals {
+    position: absolute;
+    top: 210vh;
+    left: 5vw;
+    width: 90%;
+}
+
+/* figcaption {
+    text-align: center;
+} */
 
 img {
     justify-content: center;
