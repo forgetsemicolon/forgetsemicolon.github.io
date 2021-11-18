@@ -9,7 +9,8 @@
     const actionArea = document.getElementById('actions');
 
     const diceRoll = new Audio('media/diceRoll.mp3');
-    const winningSound = new Audio('media/winningSound.mp3');
+    const winningSound = new Audio('media/finalWin.mp3');
+    const snakeEyes = new Audio('media/snakeEyes-2.mp3');
 
     // const info = document.getElementById('info');
     const inst = document.getElementById('inst');
@@ -111,6 +112,7 @@
         if (gameData.rollSum === 2) {
             console.log("snake eyes were rolled");
             game.innerHTML += '<p>Oh snap! Snake eyes!</p>';
+            snakeEyes.play();
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             if (gameData.index == 0) {
