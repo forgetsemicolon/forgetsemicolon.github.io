@@ -72,10 +72,30 @@ body {
     width: 90%;
 }
 
-/* figcaption {
-    text-align: center;
-} */
-
 img {
     justify-content: center;
 }
+
+footer {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 240vh;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    opacity: 1;
+}
+
+footer a:hover, a:active {
+    color: yellow
+}
+
