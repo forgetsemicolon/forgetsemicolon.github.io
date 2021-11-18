@@ -148,7 +148,7 @@
             actionArea.innerHTML = '';
             const images = document.querySelectorAll('img');
 
-            for (var i=0;i<images.length;i++){
+            for (let i=0;i<images.length;i++){
                 images[i].style.display = 'none';
             }
             document.getElementById('quit').innerHTML = "Start a New Game?";
