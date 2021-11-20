@@ -11,7 +11,6 @@
     const diceRoll = new Audio('media/diceRoll.mp3');
     const winningSound = new Audio('media/winningSound.mp3');
 
-    // const info = document.getElementById('info');
     const inst = document.getElementById('inst');
 
     const gameData = {
@@ -24,8 +23,7 @@
         gameEnd: 29
     }
 
-    // console.log(gameData);
-
+    //on clicking the info button for instructions overlay
     document.querySelector('#info').addEventListener("click",function(event) {
         event.preventDefault();
         const formData = document.querySelectorAll("input[type=text]");
@@ -51,6 +49,7 @@
         }
     })
 
+    //instructions for the game
     function displayInfo() {
 
         const myText = "There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a 'one'. If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a 'one' was not rolled) or if the current player feels that luck is running thin, they can pass to the other player.";
@@ -63,6 +62,7 @@
 
     }
 
+    //startGame button
     startGame.addEventListener('click', function() {
         gameData.index = Math.round(Math.random());
         console.log(gameData.index);
@@ -77,6 +77,7 @@
         setUpTurn();
     });
 
+    //initial player selection
     function setUpTurn() {
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
@@ -88,6 +89,7 @@
         throwDice();
     }
 
+    //dice roll
     function throwDice() {
         actionArea.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;
@@ -139,6 +141,7 @@
         checkWinningCondition();
     }
 
+    //checking the score against the required winning condition
     function checkWinningCondition () {
         if (gameData.score[gameData.index] > gameData.gameEnd) {
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
@@ -159,6 +162,7 @@
         }
     }
 
+    //for current score of the players
     function showCurrentScore() {
         score.innerHTML = `<p> <strong>${gameData.players[0]}: ${gameData.score[0]}/30</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>${gameData.players[1]}: ${gameData.score[1]}/30</strong></p>`;
     }
