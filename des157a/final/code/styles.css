@@ -75,6 +75,22 @@ body {
     cursor: pointer;
 }
 
+#mute {
+    position: absolute;
+    left: 95%;
+    top: 15%;
+    background-color: #F2F013;
+    border: 4px solid black;
+    color: black;
+    border-radius: 30%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#muteButton {
+    width: 30px;
+}
+
 #overlay {
     position: absolute;
     top: 50%;
