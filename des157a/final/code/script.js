@@ -8,24 +8,26 @@
     const score = document.getElementById('score');
     const actionArea = document.getElementById('actions');
 
+    //audio files
     const diceRoll = new Audio('media/diceRoll.mp3');
     const winningSound = new Audio('media/finalWin.mp3');
     const snakeEyes = new Audio('media/snakeEyes-2.mp3');
 
     const inst = document.getElementById('inst');
 
+    const mute = document.getElementById('mute');
+
+    //individual squid images
     const squid1 = document.getElementById('squid_l');
     const squid2 = document.getElementById('squid_r');
 
+    //individual balloon images
     const balloon1 = document.getElementById('balloon_l');
     const balloon2 = document.getElementById('balloon_r');
 
-    const dice1 = document.getElementById("dice1");
-    const dice2 = document.getElementById("dice2");
-
     const gameData = {
         dice: ['1die.png', '2die.png', '3die.png', '4die.png', '5die.png', '6die.png'],
-        players: ['player1', 'player2'],
+        players: ['Player_1', 'Player_2'],
         roll1: 0,
         roll2: 0,
         rollSum: 0,
@@ -33,8 +35,7 @@
         gameEnd: 29
     }
 
-    // console.log(gameData);
-
+    //to show/hide the instructions overlay
     document.querySelector('#info').addEventListener("click",function(event) {
         event.preventDefault();
         const formData = document.querySelectorAll("input[type=text]");
@@ -51,7 +52,7 @@
         document.querySelector('body').style.overflow = "auto";
     })
 
-    //To exit to pressing ESC key
+    //To exit overlay on pressing ESC key
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
             document.getElementById('overlay').className = 'hidden';
@@ -60,6 +61,7 @@
         }
     })
 
+    //instructions text
     function displayInfo() {
 
         const myText = "There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a 'one'. If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a 'one' was not rolled) or if the current player feels that luck is running thin, they can pass to the other player.";
@@ -72,6 +74,24 @@
 
     }
 
+    //mute button
+    mute.addEventListener("click",function(event) {
+        const sounds = [diceRoll, winningSound, snakeEyes];
+
+        for (var i=0; i< sounds.length; i++) {
+            if (sounds[i].muted == true) {
+                sounds[i].muted = false;
+                mute.innerHTML = '<img src="images/mute.png">';
+                document.getElementById('mute')
+            }
+            else{
+                sounds[i].muted = true;
+                mute.innerHTML = '<img src="images/unmute.png">';
+            }
+        }
+    });
+
+    //startGame button
     startGame.addEventListener('click', function() {
         gameData.index = Math.round(Math.random());
         console.log(gameData.index);
@@ -86,6 +106,7 @@
         setUpTurn();
     });
 
+    //setting up game
     function setUpTurn() {
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
@@ -97,14 +118,15 @@
         throwDice();
     }
 
+    //throwDice function
     function throwDice() {
         diceRoll.play();
         actionArea.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
-        game.innerHTML += `<img id="dice1" src="images/${gameData.dice[gameData.roll1-1]}">
-                            <img id="dice2" src="images/${gameData.dice[gameData.roll2-1]}">`;
+        game.innerHTML += `<img src="images/${gameData.dice[gameData.roll1-1]}">
+                            <img src="images/${gameData.dice[gameData.roll2-1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
         //if two 1s are rolled
@@ -158,6 +180,7 @@
         checkWinningCondition();
     }
 
+    //checking score of the players against the winning condition
     function checkWinningCondition () {
         if (gameData.score[gameData.index] > gameData.gameEnd) {
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
@@ -168,17 +191,9 @@
 
             const images = document.querySelectorAll('img');
 
-            // for (let i=0;i<images.length;i++){
-            //     images[i].style.visibility = 'hidden';
-            // }
-
-            // dice1.style.display = 'none';
-            // dice2.style.display = 'none';
-
-            // balloon1.style.visibility = 'visible';
-            // balloon2.style.visibility = 'visible';
-            // squid1.style.visibility = 'visible';
-            // squid2.style.visibility = 'visible';
+            game.innerHTML = '<h1>GAME OVER!</h1>';
+            game.style.textShadow = '3px 2px gray';
+            game.style.fontSize = '20px';
 
             balloon1.style.top = '10vh';
             balloon1.style.transition = '4s';
@@ -188,21 +203,19 @@
 
             if (gameData.index == 0) {
                 squid1.style.left = '45%';
-                // squid1.style.transform = "rotate(45deg)";
                 squid1.style.transition = '2s';
-                // squid1.style.transform = "rotate(-45deg)";
                 squid1.style.transition = '2s';
                 squid1.style.transform = 'rotate(360deg)';
-                squid2.style.display = 'none';
+                squid2.style.transition = '10s';
+                squid2.style.top = '200vh';
             }
             else {
                 squid2.style.left = '45%';
-                // squid2.style.transform = "rotate(45deg)";
                 squid2.style.transition = '2s';
-                // squid2.style.transform = "rotate(-45deg)";
                 squid2.style.transition = '2s';
                 squid2.style.transform = 'rotate(360deg)';
-                squid1.style.display = 'none';
+                squid1.style.transition = '10s';
+                squid1.style.top = '200vh';
             }
 
             document.getElementById('quit').innerHTML = "Start a New Game?";
@@ -213,6 +226,7 @@
         }
     }
 
+    //current scores of the players
     function showCurrentScore() {
         score.innerHTML = `<p> <strong>${gameData.players[0]}: ${gameData.score[0]}/30</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>${gameData.players[1]}: ${gameData.score[1]}/30</strong></p>`;
     }
