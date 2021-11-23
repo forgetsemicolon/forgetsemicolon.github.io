@@ -35,10 +35,12 @@
         gameEnd: 29
     }
 
+    document.getElementById('overlay').className = 'showing';
+    displayInfo();
+
     //to show/hide the instructions overlay
     document.querySelector('#info').addEventListener("click",function(event) {
         event.preventDefault();
-        const formData = document.querySelectorAll("input[type=text]");
         displayInfo();
         document.getElementById('overlay').className = 'showing';
 
@@ -64,9 +66,11 @@
     //instructions text
     function displayInfo() {
 
-        const myText = "There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a 'one'. If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a 'one' was not rolled) or if the current player feels that luck is running thin, they can pass to the other player.";
+        const myText = "Hello! Welcome to my game! Here are the rules: "; "There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a 'one'. If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a 'one' was not rolled) or if the current player feels that luck is running thin, they can pass to the other player.";
 
         inst.innerHTML = myText;
+
+        inst.innerHTML += "<br>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a 'one'. If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a 'one' was not rolled) or if the current player feels that luck is running thin, they can pass to the other player.";
 
         inst.innerHTML += "<p>The first player to get 30 points or higher wins.</p>";
 
