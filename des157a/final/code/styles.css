@@ -22,6 +22,10 @@ body {
 }
 
 #heading {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 52px;
     color: #FFCF45;
     text-align: center;
@@ -35,6 +39,23 @@ body {
 @keyframes blinker {
 50% {
         opacity: 0;
+    }
+}
+
+.banner {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    animation: animation1 30s ease-in-out infinite;
+}
+
+@keyframes animation1 {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 150px);
     }
 }
 
@@ -161,24 +182,52 @@ button {
     font-family: 'VT323', monospace;
 }
 
+#quit {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #FF5C58;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+}
+
 div {
     padding: 7px;
 }
 
-#gamecontrol, #score {
-    /* background-color: aliceblue; */
+#gamecontrol {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #ffff;
     font-size: 10px;
 }
 
-#game {
-    /* background-color:#eaeaea; */
+#actions {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     font-size: 12px;
 }
-#actions, #score {
-    /* background-color: silver; */
+
+#game {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 12px;
+}
+
+#score {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     font-size: 12px;
 }

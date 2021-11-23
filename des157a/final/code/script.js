@@ -25,6 +25,13 @@
     const balloon1 = document.getElementById('balloon_l');
     const balloon2 = document.getElementById('balloon_r');
 
+    //individual banners
+    const player1_banner = document.getElementById('player1_banner');
+    const player2_banner = document.getElementById('player2_banner');
+
+    player1_banner.style.display = 'none';
+    player2_banner.style.display = 'none';
+
     const gameData = {
         dice: ['1die.png', '2die.png', '3die.png', '4die.png', '5die.png', '6die.png'],
         players: ['Player_1', 'Player_2'],
@@ -212,6 +219,8 @@
                 squid1.style.transform = 'rotate(360deg)';
                 squid2.style.transition = '10s';
                 squid2.style.top = '200vh';
+                player1_banner.style.display = 'block';
+                player2_banner.style.display = 'none';
             }
             else {
                 squid2.style.left = '45%';
@@ -220,6 +229,8 @@
                 squid2.style.transform = 'rotate(360deg)';
                 squid1.style.transition = '10s';
                 squid1.style.top = '200vh';
+                player1_banner.style.display = 'none';
+                player2_banner.style.display = 'block';
             }
 
             document.getElementById('quit').innerHTML = "Start a New Game?";
