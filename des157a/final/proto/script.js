@@ -221,6 +221,7 @@
                 squid2.style.top = '200vh';
                 player1_banner.style.display = 'block';
                 player2_banner.style.display = 'none';
+                squid2.style.zIndex = 0;
             }
             else {
                 squid2.style.left = '45%';
@@ -231,6 +232,7 @@
                 squid1.style.top = '200vh';
                 player1_banner.style.display = 'none';
                 player2_banner.style.display = 'block';
+                squid1.style.zIndex = 0;
             }
 
             document.getElementById('quit').innerHTML = "Start a New Game?";
