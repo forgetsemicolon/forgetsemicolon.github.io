@@ -221,7 +221,7 @@
                 squid1.style.transform = 'rotate(360deg)';
                 squid2.style.transition = '10s';
                 squid2.style.top = '200vh';
-                player1_banner.style.left = '-50px';
+                player1_banner.style.left = '-200px';
                 player1_banner.style.display = 'block';
                 // player1_banner.className = 'banner move';
                 player2_banner.style.display = 'none';
@@ -237,7 +237,7 @@
                 squid1.style.transition = '10s';
                 squid1.style.top = '200vh';
                 player1_banner.style.display = 'none';
-                player2_banner.style.left = '-50px';
+                player2_banner.style.left = '-200px';
                 player2_banner.style.display = 'block';
                 // player2_banner.className = 'banner move';
                 // player2_banner.style.animation = 'animation1 30s ease-in-out infinite';
