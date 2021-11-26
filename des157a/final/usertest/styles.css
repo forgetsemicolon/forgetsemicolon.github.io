@@ -2,7 +2,7 @@
     width: 100%;
     /* max-width: 1366px; */
     min-width: 1200px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 body {
@@ -19,7 +19,7 @@ body {
     margin: 0; 
     /* height: 100%;  */
     overflow: hidden;
-    position: fixed;
+    /* position: fixed; */
 }
 
 #heading {
@@ -45,19 +45,29 @@ body {
 
 .banner {
     position: absolute;
-    top: 10%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    left: -50px;
+    z-index: 1;
+    /* transform: translate(-50%, -50%); */
+    animation: animation1 20s ease-in-out infinite;
+}
+
+.move {
     animation: animation1 30s ease-in-out infinite;
 }
 
 @keyframes animation1 {
     from {
-        left: 0;
+        left: -50px;
     }
     to {
-        left: calc(100% - 150px);
+        left: calc(100% + 150px);
     }
+}
+
+#player1_banner, #player2_banner {
+    height: 200px;
+    width: auto;
 }
 
 #balloon_l {
@@ -231,6 +241,7 @@ div {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 12px;
+    width: 500px;
 }
 
 #grass {

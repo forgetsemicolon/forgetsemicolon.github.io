@@ -113,6 +113,8 @@
         gameControl.innerHTML += '<button id="quit">Wanna Quit?</button>';
 
         document.getElementById('quit').addEventListener('click', function() {
+            player1_banner.style.left = '10px';
+            player2_banner.style.left = '10px';
             location.reload();
         });
 
@@ -202,8 +204,6 @@
 
             actionArea.innerHTML = '';
 
-            const images = document.querySelectorAll('img');
-
             game.innerHTML = '<h1>GAME OVER!</h1>';
             game.style.textShadow = '3px 2px gray';
             game.style.fontSize = '20px';
@@ -221,9 +221,13 @@
                 squid1.style.transform = 'rotate(360deg)';
                 squid2.style.transition = '10s';
                 squid2.style.top = '200vh';
+                player1_banner.style.left = '-50px';
                 player1_banner.style.display = 'block';
+                // player1_banner.className = 'banner move';
                 player2_banner.style.display = 'none';
+                // player1_banner.style.animation = 'animation1 30s ease-in-out infinite';
                 squid2.style.zIndex = 0;
+
             }
             else {
                 squid2.style.left = '45%';
@@ -233,7 +237,10 @@
                 squid1.style.transition = '10s';
                 squid1.style.top = '200vh';
                 player1_banner.style.display = 'none';
+                player2_banner.style.left = '-50px';
                 player2_banner.style.display = 'block';
+                // player2_banner.className = 'banner move';
+                // player2_banner.style.animation = 'animation1 30s ease-in-out infinite';
                 squid1.style.zIndex = 0;
             }
 
