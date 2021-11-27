@@ -10,7 +10,8 @@
 
     //audio files
     const diceRoll = new Audio('media/diceRoll.mp3');
-    const winningSound = new Audio('media/finalWin.mp3');
+    // const winningSound = new Audio('media/finalWin.mp3');
+    const winningSound = new Audio('media/winningSound.mp3')
     const snakeEyes = new Audio('media/snakeEyes-2.mp3');
 
     const inst = document.getElementById('inst');
