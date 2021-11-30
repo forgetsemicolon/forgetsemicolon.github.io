@@ -1,0 +1,294 @@
+.game-container {
+    width: 100%;
+    min-width: 1200px;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    height: 100vh;
+    width: 100%;
+    line-height: 1.5em;
+    background-color: #47BAE3;
+    background-image: url('images/bg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; 
+    overflow: hidden;
+    position: fixed;
+}
+
+#heading {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 52px;
+    color: #FFCF45;
+    text-align: center;
+    text-shadow: 5px 3px black;
+}
+
+.blink_me {
+    animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+50% {
+        opacity: 0;
+    }
+}
+
+#player1_banner, #player2_banner {
+    position: absolute;
+    top: 30%;
+    left: -200px;
+    z-index: 1;
+    height: 150px;
+    width: auto;
+    /* transform: translate(-50%, -50%); */
+    animation: animation1 20s linear infinite;
+}
+
+.move {
+    animation: animation1 30s infinite;
+}
+
+@keyframes animation1 {
+    from {
+        left: -200px;
+    }
+    to {
+        left: calc(100%);
+    }
+}
+
+#balloon_l {
+    position: absolute;
+    top: 60vh;
+    left: 2vw;
+}
+
+#balloon_r {
+    position: absolute;
+    top: 60vh;
+    left: 90vw;
+}
+
+#squid_l {
+    position: absolute;
+    top: 75vh;
+    left: 38vw;
+}
+
+#squid_r {
+    position: absolute;
+    top: 75vh;
+    left: 55vw;
+    /* transform: rotate(90deg); */
+}
+
+#info {
+    position: fixed;
+    left: 95%;
+    top: 5%;
+    background-color: #B2EA70;
+    border: 4px solid black;
+    color: black;
+    border-radius: 30%;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#mute {
+    position: absolute;
+    left: 95%;
+    top: 15%;
+    background-color: #F2F013;
+    border: 4px solid black;
+    color: black;
+    border-radius: 30%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#muteButton {
+    width: 30px;
+    z-index: 100;
+}
+
+#quit {
+    position: fixed;
+    left: 95%;
+    top: 25%;
+    background-color: #FF5C58;
+    border: 4px solid black;
+    color: black;
+    border-radius: 30%;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.721);
+    transition: all 1s ease;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+#overlay article {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 80vw;
+    height: 55vh;
+    background-color: #BC8CF2;
+    font-family: 'VT323', monospace;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: justify;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+}
+
+.close {
+    position: relative;
+    top: 55vh;
+    left: 45%;
+    font-size: medium;
+    background-color: #FF5F7E;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 32px;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.close:hover {
+    background-color: black;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+button { 
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+}
+
+#start {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #6ECB63;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+}
+
+div {
+    padding: 7px;
+}
+
+#gamecontrol {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffff;
+    font-size: 10px;
+}
+
+#actions {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 12px;
+}
+
+#game {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 12px;
+}
+
+#score {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 12px;
+    width: 500px;
+}
+
+#grass {
+    background-image: url('images/DES157-GameDesign-Grass.png');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    z-index: 1;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+
+}
+
+footer {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+footer a {
+    font-size: small;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    opacity: 1;
+}
+
+footer a:hover, a:active {
+    color: yellow
+}
