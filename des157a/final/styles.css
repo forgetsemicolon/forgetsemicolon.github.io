@@ -29,20 +29,28 @@ body {
 
 #summary {
     position: absolute;
-    top: 10vh;
-    left: 5vw;
+    top: 0;
+    left: 30vw;
+    font-size: 80px;
+    justify-content: center;
 }
 
 #comp1 {
     position: absolute;
-    top: 10vh;
-    left: 55vw;
+    top: 25vh;
+    left: 5vw;
 }
 
 #comp2 {
     position: absolute;
-    top: 40vh;
-    left: 5vw;
+    top: 25vh;
+    left: 55vw;
+}
+
+#comp3 {
+    position: absolute;
+    top: 120vh;
+    left: 30vw;
 }
 
 #goals {
@@ -71,7 +79,8 @@ body {
 }
 
 img {
-    justify-content: center;
+    width: 30%;
+    border: 5px solid black;
 }
 
 footer {
@@ -80,7 +89,8 @@ footer {
     flex-direction: row;
     align-items: center;
     position: absolute;
-    top: 240vh;
+    /* top: 240vh; */
+    top: 220vh;
     bottom: 0;
     width: 100%;
 }
