@@ -165,7 +165,7 @@
             showCurrentScore();
 
             //show the current score
-            setTimeout(setUpTurn, 5000);
+            setTimeout(setUpTurn, 2000);
         }
 
         //if either die rolled a 1
@@ -175,7 +175,7 @@
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
 
-            setTimeout(setUpTurn, 5000);
+            setTimeout(setUpTurn, 2000);
         }
 
         //if neither die is a 1
