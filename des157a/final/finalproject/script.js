@@ -155,17 +155,17 @@
             game.innerHTML += '<p>Oh snap! Snake eyes!</p>';
             snakeEyes.play();
             gameData.score[gameData.index] = 0;
-            gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             if (gameData.index == 0) {
                 squid1.style.transform = "rotate(90deg)";
             }
             else {
                 squid2.style.transform = "rotate(90deg)";
             }
+            gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
 
             //show the current score
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 5000);
         }
 
         //if either die rolled a 1
@@ -175,7 +175,7 @@
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
 
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 5000);
         }
 
         //if neither die is a 1
